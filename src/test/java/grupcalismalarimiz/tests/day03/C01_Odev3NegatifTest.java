@@ -8,7 +8,7 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class C01_OdevUcNegatifTest {
+public class C01_Odev3NegatifTest {
 
     //Description:
     //Kullanimda olmayan kullanıcı adi ve şifre ile giriş yapılamamalı

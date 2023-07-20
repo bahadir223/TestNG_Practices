@@ -31,4 +31,17 @@ public class BlueRentAlCarsPage {
     @FindBy(xpath = "//*[@class='ajs-button ajs-ok']")  // --> logOut'a tiklayinca önümüze çıkan " OK "
     public WebElement ok;
 
+    @FindBy(xpath = "//div[@class='invalid-feedback']")  // --> logOut'a tiklayinca önümüze çıkan " OK "
+    public WebElement mailMustBeValid;
+
+    @FindBy(xpath = "//select[@name='car']")  // --> logOut'a tiklayinca önümüze çıkan " OK "
+    public WebElement ddm;
+
+    @FindBy(xpath = "//*[@type='submit']")  // --> logOut'a tiklayinca önümüze çıkan " OK "
+    public WebElement continueReservation;
+
+
+
+
+
 }
