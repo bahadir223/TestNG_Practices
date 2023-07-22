@@ -40,8 +40,10 @@ public class BlueRentAlCarsPage {
     @FindBy(xpath = "//*[@type='submit']")  // --> logOut'a tiklayinca önümüze çıkan " OK "
     public WebElement continueReservation;
 
+    @FindBy(xpath = "(//ul)[2]")
+    public WebElement pickUpKapama;
 
-
-
+    @FindBy(xpath = "(//ul)[3]")
+    public WebElement dropUpKapama;
 
 }

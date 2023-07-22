@@ -6,6 +6,7 @@ import grupcalismalarimiz.utilities.Driver;
 import grupcalismalarimiz.utilities.ReusableMethods;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -32,6 +33,12 @@ public class C03_Odev5NegatifTest {
                 ConfigReader.getProperty("pickUpTarih"), Keys.TAB,
                 ConfigReader.getProperty("pickUpSaat"), Keys.TAB,
                 ConfigReader.getProperty("dropOffTarih"), Keys.TAB, ConfigReader.getProperty("dropOffSaat"));
+
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(blueRentAlCarsPage.pickUpKapama).click().perform();
+        ReusableMethods.bekle(2);
+        actions.moveToElement(blueRentAlCarsPage.dropUpKapama).click().perform();
+        ReusableMethods.bekle(2);
         //Kullanici arac bilgilerini girip CONTINUE RESERVATION butonuna tikladiginda
         //Ve giris yapilmadiginda
         //Hata mesaji almali : Please first login
